@@ -4,7 +4,7 @@ import { Download, Search, Users, FileText, CheckCircle, AlertCircle, RefreshCw,
 
 const App = () => {
     const [xlsxLoaded, setXlsxLoaded] = useState(false);
-    const [setAllData] = useState([]);
+    const [allData, setAllData] = useState([]);
     const [groupedData, setGroupedData] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -23,6 +23,7 @@ const App = () => {
             return;
         }
 
+        console.log(allData);
         const script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
         script.async = true;
