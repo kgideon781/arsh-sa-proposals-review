@@ -36,7 +36,7 @@ const App = () => {
                 script.parentNode.removeChild(script);
             }
         };
-    }, []);
+    }, [allData]);
 
     const parseHTML = (html) => {
         if (!html) return '';
