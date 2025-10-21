@@ -4,7 +4,7 @@ import { Download, Search, Users, FileText, CheckCircle, AlertCircle, RefreshCw,
 
 const App = () => {
     const [xlsxLoaded, setXlsxLoaded] = useState(false);
-    const [allData, setAllData] = useState([]);
+    const [ setAllData] = useState([]);
     const [groupedData, setGroupedData] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
